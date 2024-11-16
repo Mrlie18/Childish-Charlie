@@ -1,6 +1,11 @@
 /* Basic Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body, html { height: 100%; font-family: Arial, sans-serif; color: #fff; overflow: auto; } /* Changed from hidden to auto */
+body, html { 
+    height: 100%; 
+    font-family: Arial, sans-serif; 
+    color: #fff; 
+    overflow: auto; 
+}
 
 /* Video Background */
 .video-background {
@@ -21,13 +26,14 @@ body, html { height: 100%; font-family: Arial, sans-serif; color: #fff; overflow
 }
 
 .logo {
-    width: 500px; /* Increased width for a larger logo */
-    opacity: 0.8; /* Slight transparency for blending */
+    width: 500px; /* Default logo size */
+    max-width: 90%; /* Ensure logo scales on smaller screens */
+    opacity: 0.8;
     transition: opacity 0.3s;
 }
 
 .logo:hover {
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
 /* Main Content */
@@ -38,8 +44,8 @@ body, html { height: 100%; font-family: Arial, sans-serif; color: #fff; overflow
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 150%; /* Make content taller than the viewport */
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    min-height: 150%; /* Ensure content is taller than the viewport */
+    background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     text-align: center;
 }
@@ -65,4 +71,28 @@ a.button {
 
 a.button:hover {
     background-color: #0056b3;
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2rem; /* Smaller font for titles */
+    }
+
+    .content p {
+        font-size: 1rem; /* Smaller font for text */
+    }
+
+    .logo {
+        width: 300px; /* Smaller logo for smaller screens */
+    }
+
+    a.button {
+        padding: 0.8rem 1.5rem; /* Adjust button size */
+        font-size: 0.9rem; /* Adjust text size */
+    }
 }
