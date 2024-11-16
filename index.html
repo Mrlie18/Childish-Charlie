@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Baldovia - Home</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100%; font-family: Arial, sans-serif; color: #fff; overflow: hidden; }
+
+        /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Logo */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 500px; /* Increased width for a larger logo */
+            opacity: 0.8; /* Slight transparency for blending */
+            transition: opacity 0.3s;
+        }
+
+        .logo:hover {
+            opacity: 1; /* Full opacity on hover */
+        }
+
+        /* Main Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        a.button {
+            padding: 1rem 2rem;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="WEWWW.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="trollishly_youtube_video_downloader.mp4" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Content with Larger Logo Above -->
+    <div class="content">
+        <!-- Centered Larger Logo -->
+        <div class="logo-container">
+            <img src="LOGO CHARLIE.png" alt="Logo" class="logo">
+        </div>
+
+        <h1>CHILDISH CLOTHING</h1>
+        <p>"Life isn’t perfect, but your outfit can be."</p>
+        <a href="about.html" class="button">About Me</a>
+    </div>
+
+</body>
+</html>
